@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[windows设置编码]]></title>
+    <url>%2F2019%2F06%2F05%2Fchcp%2F</url>
+    <content type="text"><![CDATA[12chcp 936 GBK编码chcp 65001 UTF8编码]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[shell]]></title>
+    <url>%2F2019%2F06%2F05%2Fshell%2F</url>
+    <content type="text"><![CDATA[上一个命令的最右半句1cd !$ 日期1date +%Y%m%d%H%M%S 历史命令显示时间1export HISTTIMEFORMAT="%F %T " ps指定列显示12ps -ef | grep java | head -n 1 | awk '&#123;print$2&#125;'ps -eo command,lstart|grep ncss-send-message jar12jar -cvf report-intf.war .jar -xvf report-intf.war vi1234567:10,50s#abc#def#g（如文件内有#，可用/替换,:%s/abc/def/g）set ts=4 tab键4个set bs=4 空格4个set key= 去除密码:X 加密:x 保存 三剑客12345sed -i '1,$s/113.62.127:[0-9]\&#123;4\&#125;/113.62.127:1234/g' index.js netstat -anlutp|awk '&#123;print $5":"$7&#125;'|awk -F : '&#123;print $4$6&#125;'|sort|uniq -c|sort -n|grep 221ps -aux|awk '&#123;sum+=$4&#125; END &#123;print "Sum = ", sum&#125;' xargs1find .|xargs grep -r 'k' 位置参数1234567$# 传递到脚本的参数个数$* 以一个单字符串显示所有向脚本传递的参数$$ 脚本运行的当前进程ID号$! 后台运行的最后一个进程的ID号$@ 与$*相同，但是使用时加引号，并在引号中返回每个参数。$- 显示Shell使用的当前选项，与set命令功能相同。$? 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。 仅显示自己目录1ll -d `find /home/clique/ -mtime -1|grep old-dicyun-clique` curl发送邮件1/usr/local/bin/curl --verbose -s --url "smtps://smtp.qq.com" --mail-from "number@qq.com" --mail-rcpt "number@qq.com" --upload-file mail.txt --user "number@qq.com:password" 同步123rsync -av root@domain:/home/clique/test/ kk/rsync -avzuP crontab文件锁12flock -xn /tmp/run.lock -c '/root/s.sh'flock -w0 /tmp/run.lock -c '/root/s.sh' nmap扫描端口12nmap -sT -Pn ip -p8905-8907nmap -sU -Pn ip -p8905-8907 yum123yum autoremoveyum history list/undo numberyum install epel-release 更改时区1cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[cmd]]></title>
+    <url>%2F2019%2F06%2F05%2Fcmd%2F</url>
+    <content type="text"><![CDATA[查看端口12netstat -anonetstat -aon|findstr 9050 查看PID对应的进程1tasklist|findstr 2016 杀进程12taskkill /f /t /im tor.exetaskkill /PID 2016 start123start /b java -jar kkk.jar 后台启动start /min java -jar kkk.jar 最小化窗口start /max java -jar kkk.jar 最大化窗口]]></content>
+  </entry>
+</search>
